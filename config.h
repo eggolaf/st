@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static char *font = "consolas:bold:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Terminus:pixelsize=16";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -110,31 +110,31 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 1.0;
 
+// #3883cc #cc9a1c
+
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"black",
-    "#1a1725", /* originally red3, now background */
-    "#008000",
-	"#0080ff", /* originally yellow3 */
-    "#94cf95", /* originally blue2, now foreground */
-    "magenta3",
-    "cyan3",
-    "gray90",
-    /* 8 bright colors */
-    "gray50",
-    "red",
-    "green",
-    "#00b0ff", /* originally yellow */
-    "#5c5cff",
-    "#94cf95",
-	"cyan",
-    "white",
+	"#141414", // dark background
+	"red3",  // dark red
+	"#a0b886", // dark green
+	"#cc9a1c", // dark yellow
+	"#3883cc", // dark blue
+	"magenta3", // dark magenta
+	"cyan3", // dark cyan
+	"#bbbbbb", // dark foreground
+
+	"gray50", // bright background
+	"red", // bright red
+	"green", // bright green
+	"yellow", // bright yellow
+	"#5c5cff", // bright blue
+	"magenta", // bright magenta
+	"cyan", // bright cyan
+	"#ffffff", // bright foreground
+
 	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#add8e6", /* 256 -> cursor */
-	"#555555", /* 257 -> rev cursor*/
-	"#282828", /* 258 -> bg */
-	"#ebdbb2", /* 259 -> fg */
+	"#cccccc",
+	"#555555",
 };
 
 
@@ -143,13 +143,13 @@ static const char *colorname[] = {
  * foreground, background, cursor, reverse cursor
  */
 /*
-unsigned int defaultfg = 0;
-unsigned int defaultbg = 15;
-*/
 unsigned int defaultfg = 4;
 unsigned int defaultbg = 1;
-unsigned int defaultcs = 8;
-unsigned int defaultrcs = 15;
+*/
+unsigned int defaultfg = 7;
+unsigned int defaultbg = 0;
+unsigned int defaultcs = 256;
+unsigned int defaultrcs = 257;
 
 /*
  * Default shape of cursor
