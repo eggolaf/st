@@ -6,7 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static char *font = "Terminus:pixelsize=16";
+/* static char *font = "Terminus:pixelsize=16"; */
+static char *font = "Go Mono:pixelsize=16";
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -110,8 +111,6 @@ unsigned int tabspaces = 8;
 /* bg opacity */
 float alpha = 1.0;
 
-// #3883cc #cc9a1c
-
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	"#141414", // dark background
@@ -121,7 +120,7 @@ static const char *colorname[] = {
 	"#3883cc", // dark blue
 	"magenta3", // dark magenta
 	"cyan3", // dark cyan
-	"#bbbbbb", // dark foreground
+	"#a0a0a0", // dark foreground
 
 	"gray50", // bright background
 	"red", // bright red
@@ -133,8 +132,9 @@ static const char *colorname[] = {
 	"#ffffff", // bright foreground
 
 	[255] = 0,
-	"#cccccc",
+	"#a0a0a0",
 	"#555555",
+	"#ff0000",
 };
 
 
@@ -142,14 +142,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-/*
-unsigned int defaultfg = 4;
-unsigned int defaultbg = 1;
-*/
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
 unsigned int defaultcs = 256;
-unsigned int defaultrcs = 257;
+unsigned int defaultrcs = 1;
 
 /*
  * Default shape of cursor
