@@ -6,8 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-/* static char *font = "Terminus:pixelsize=16"; */
-static char *font = "Go Mono:pixelsize=16";
+static char *font = "Terminus:pixelsize=18";
+/* static char *font = "Go Mono:pixelsize=16"; */
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
 
@@ -117,16 +117,16 @@ static const char *colorname[] = {
 	"red3",  // dark red
 	"#a0b886", // dark green
 	"#cc9a1c", // dark yellow
-	"#3883cc", // dark blue
+	"#223e62", // dark blue
 	"magenta3", // dark magenta
-	"cyan3", // dark cyan
+	"#3883cc", // dark cyan
 	"#a0a0a0", // dark foreground
 
 	"gray50", // bright background
 	"red", // bright red
 	"green", // bright green
 	"yellow", // bright yellow
-	"#5c5cff", // bright blue
+	"#3883cc", // bright blue
 	"magenta", // bright magenta
 	"cyan", // bright cyan
 	"#ffffff", // bright foreground
