@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 
-static char *font = "Terminus:pixelsize=18";
+static char *font = "Fira Code:pixelsize=18";
 /* static char *font = "Go Mono:pixelsize=16"; */
 static char *font2[] = { "JoyPixels:pixelsize=10:antialias=true:autohint=true" };
 static int borderpx = 2;
@@ -113,23 +113,24 @@ float alpha = 1.0;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#141414", // dark background
+	"#191919", // dark background
 	"red3",  // dark red
 	"#a0b886", // dark green
 	"#cc9a1c", // dark yellow
 	"#223e62", // dark blue
 	"magenta3", // dark magenta
-	"#3883cc", // dark cyan
-	"#a0a0a0", // dark foreground
+	"#7c7c7c", // dark cyan
+	"#cccccc", // dark foreground
 
-	"gray50", // bright background
+//	"gray50", // bright background
+	"#d3d3d3",
 	"red", // bright red
 	"green", // bright green
-	"yellow", // bright yellow
+	"#ffffdd", // bright yellow
 	"#3883cc", // bright blue
 	"magenta", // bright magenta
 	"cyan", // bright cyan
-	"#ffffff", // bright foreground
+	"#000000", // bright foreground
 
 	[255] = 0,
 	"#a0a0a0",
@@ -142,9 +143,9 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 7;
-unsigned int defaultbg = 0;
-unsigned int defaultcs = 256;
+unsigned int defaultfg = 15;
+unsigned int defaultbg = 11;
+unsigned int defaultcs = 15;
 unsigned int defaultrcs = 1;
 
 /*
@@ -154,7 +155,7 @@ unsigned int defaultrcs = 1;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 6;
 
 /*
  * Default columns and rows numbers
