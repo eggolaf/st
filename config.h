@@ -125,7 +125,7 @@ static const char *colorname[] = {
 //	"gray50", // bright background
 	"#b3b6a4",
 	"red", // bright red
-	"green", // bright green
+	"#8bd78b", // bright green
 	"#ffffdd", // bright yellow
 	"#3883cc", // bright blue
 	"magenta", // bright magenta
@@ -145,7 +145,7 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-unsigned int defaultcs = 15;
+unsigned int defaultcs = 10;
 unsigned int defaultrcs = 1;
 
 /*
@@ -155,7 +155,7 @@ unsigned int defaultrcs = 1;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 6;
+static unsigned int cursorshape = 2;
 
 /*
  * Default columns and rows numbers
